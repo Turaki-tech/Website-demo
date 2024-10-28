@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Business Details</title>
-  <link rel="stylesheet" href="details.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Detail</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <br>
-    <a href="index.html" style="margin:20px 30px; text-decoration:none; color:black; ">back</a>
-  <!-- Include FontAwesome CDN in the head of your document -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/header-logo.png" alt="logo" width="50"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="business.html">Businesses</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="business-details">
-    <h2><i class="fas fa-store"></i> Business Name in Gombe</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.564721525856!2d-122.0842498!3d37.4220657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5f34567df03%3A0x5e739b30aab77e70!2sGoogleplex!5e0!3m2!1sen!2sus!4v1635873179543!5m2!1sen!2sus"
-            width="350"
-            height="350"
-            style="border:; , border-radius:50px;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-        
-    <!--  <img src="https://via.placeholder.com/300" alt="Image"> -->
-    
-    <p><i class="fas fa-utensils"></i> <strong> Category:</strong> Restaurant</p>
-    
-    <p><i class="fas fa-star"></i> <strong> Rating:</strong> <b>★★★★☆</b></p>
-    
-    <p><i class="fas fa-info-circle"></i> <strong> Description:</strong>  A popular restaurant located in Gombe offering local cuisine.</p>
-    
-    <p><i class="fas fa-map-marker-alt"></i> <strong> Address:</strong> 123 Main Market, Gombe, Gombe state</p>
-    
-    <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +2347012345678</p>
-    
-    <p><i class="fas fa-globe"></i> <strong> Website:</strong> 
-    <a href="#">www.businesswebsite.com</a></p>
-</section>
+    <!-- Business Detail Section -->
+    <main>
+        <section id="business-detail"></section>
+    </main>
 
-         
-         
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Local Business Directory</p>
+    </footer>
+
+    <script src="business-detail.js"></script>
 </body>
 </html>
