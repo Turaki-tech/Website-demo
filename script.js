@@ -69,3 +69,21 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const businessIndex = urlParams.get('index');
+    const businesses = JSON.parse(localStorage.getItem('businesses')) || [];
+    
+    if (businesses[businessIndex]) {
+        const business = businesses[businessIndex];
+        document.getElementById('business-detail').innerHTML = `
+            <h2>${business.name}</h2>
+            <p><strong>Category:</strong> ${business.category}</p>
+            <p><strong>Description:</strong> ${business.description}</p>
+            <p><strong>Phone:</strong> ${business.phone}</p>
+            <p><strong>Address:</strong> ${business.address}</p>
+            <a href="${business.mapLink}" target="_blank">View on Map</a>
+        `;
+    }
+});
+
